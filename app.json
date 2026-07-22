@@ -1,0 +1,103 @@
+{
+  "expo": {
+    "name": "Ziva",
+    "slug": "ziva-social",
+    "version": "1.0.210",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": false,
+      "buildNumber": "1",
+      "bundleIdentifier": "com.ziva.social"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#09090B"
+      },
+      "predictiveBackGestureEnabled": false,
+      "versionCode": 1,
+      "package": "com.ziva.social",
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.READ_MEDIA_VIDEO",
+        "android.permission.READ_MEDIA_AUDIO",
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.VIBRATE",
+        "android.permission.USE_BIOMETRIC",
+        "android.permission.USE_FINGERPRINT"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/favicon.png",
+      "name": "Ziva",
+      "shortName": "Ziva",
+      "description": "Rede social inteligente com IA",
+      "themeColor": "#2563EB",
+      "backgroundColor": "#ffffff",
+      "display": "fullscreen",
+      "orientation": "portrait",
+      "lang": "pt",
+      "startUrl": "/",
+      "scope": "/",
+      "viewport": "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, viewport-fit=cover",
+      "meta": {
+        "apple-mobile-web-app-capable": {
+          "content": "yes"
+        },
+        "apple-mobile-web-app-status-bar-style": {
+          "content": "black-translucent"
+        },
+        "mobile-web-app-capable": {
+          "content": "yes"
+        }
+      }
+    },
+    "plugins": [
+      "expo-router",
+      "expo-asset",
+      "expo-sqlite",
+      "expo-font",
+      "expo-system-ui",
+      "expo-image",
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Permitir que o Ziva acesse a câmera para tirar fotos",
+          "photosPermission": "Permitir que o Ziva acesse a biblioteca de fotos para selecionar imagens"
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Permitir que o Ziva acesse a câmera para transmissões ao vivo"
+        }
+      ],
+      "expo-video",
+      "expo-audio",
+      "expo-file-system",
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Permitir que o Ziva acesse a galeria para guardar vídeos e imagens gerados pela IA",
+          "savePhotosPermission": "Permitir que o Ziva guarde vídeos e imagens na tua galeria",
+          "isAccessMediaLocationEnabled": true
+        }
+      ]
+    ],
+    "router": {
+      "root": "src"
+    },
+    "experiments": {
+      "typedRoutes": true
+    },
+    "scheme": "appcuwiuhind9fl"
+  }
+}
