@@ -1,0 +1,3 @@
+
+ALTER TABLE stories ADD COLUMN IF NOT EXISTS text_overlay TEXT;
+ALTER TABLE stories ADD COLUMN IF NOT EXISTS text_color TEXT DEFAULT '#ffffff';
